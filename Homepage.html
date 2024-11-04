@@ -5,55 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victory Arts Dance</title>
     <style>
+        /* Basic CSS styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f0f0f0;
             color: #333;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-        }
+
+        /* Title styling */
         .title {
             font-size: 3em;
+            font-weight: bold;
             color: hotpink;
-            margin: 0;
+            text-align: center;
+            margin: 20px 0;
         }
+
+        /* Main content styling */
         .content {
-            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
         }
+
+        /* Buttons */
         .button {
-            padding: 10px 20px;
-            color: #fff;
             background-color: hotpink;
+            color: white;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1em;
             cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
         }
+
         .button:hover {
             background-color: #ff69b4;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1 class="title">Victory Arts Dance</h1>
-    </header>
+    <!-- Title Section -->
+    <div class="title">Victory Arts Dance</div>
 
+    <!-- Main Content Section -->
     <div class="content">
-        <h2>Welcome to Victory Arts Dance!</h2>
-        <p>Explore the world of dance with us! We offer classes in ballet, jazz, hip hop, contemporary, and more.</p>
-        <a href="#classes" class="button">View Classes</a>
+        <p>Welcome to Victory Arts Dance! Join us for an energetic and inspiring dance experience.</p>
+        <button class="button">Classes</button>
+        <button class="button">Our Team</button>
+        <button class="button">Contact Us</button>
     </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 Victory Arts Dance. All rights reserved.</footer>
 
 </body>
 </html>
